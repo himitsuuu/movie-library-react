@@ -418,7 +418,7 @@ function renderImdb(id) {
     return null;
   }
   return (
-    <AWrapper target="_blank" href={`https://kimikoapps.epizy.com/movie/imdb/play.php?id=${id}`}>
+    <AWrapper target="_blank" href={`https://kimikoapps.epizy.com/movie/imdb/play.php?id=${id}-1-1`}>
       <Button title="CLICK ME TO WATCH IF TV" icon={['fab', 'imdb']} />
     </AWrapper>
   );
