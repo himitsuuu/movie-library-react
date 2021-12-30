@@ -406,8 +406,20 @@ function renderImdb(id) {
     return null;
   }
   return (
-    <AWrapper target="_blank" href={`https://www.imdb.com/title/${id}`}>
-      <Button title="IMDB" icon={['fab', 'imdb']} />
+    <AWrapper target="_blank" href={`https://kimikoapps.epizy.com/movie/imdb/play.php?id=${id}`}>
+      <Button title="CLICK ME TO WATCH IF MOVIE" icon={['fab', 'imdb']} />
+    </AWrapper>
+  );
+}
+// Dunction Tv
+
+function renderImdb(id) {
+  if (!id) {
+    return null;
+  }
+  return (
+    <AWrapper target="_blank" href={`https://kimikoapps.epizy.com/movie/imdb/play.php?id=${id}`}>
+      <Button title="CLICK ME TO WATCH IF TV" icon={['fab', 'imdb']} />
     </AWrapper>
   );
 }
